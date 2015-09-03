@@ -11,7 +11,7 @@ L3DT_2_Opensim.sh
 This script converts mesh tiles produced by L3DT into a single mesh that can be imported into OpenSim.
 It's a shell script that uses Blender to do the hard work and it assumes the following prerequisites:
 
-You have a directory structure something like this
+You have a directory structure something like this:
 
 	
 	~
@@ -38,7 +38,7 @@ BlenderScripts is the directory this project is checked out into.
 The l3dt directory has sub directories for each project you create. Within them are various directories that L3DT uses, but you
 should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you should export as type collada.
 
-The script should be run from the BlenderScripts directory. It fixes some errors in the DAE files that L3DT produces and then invokes
+The script should be run from the BlenderScripts directory. It fixes some XML errors in the DAE files that L3DT produces and then invokes
 Blender in a headless configuration to combine the mesh tiles into one.
 
 Once you have the combined mesh tile you can import it into OpenSim. The best tool for this is the Radegast viewer.
