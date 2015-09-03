@@ -8,7 +8,7 @@ The scripts run on Linux, however it shouldn't be too difficult to do something 
 L3DT_2_Opensim.sh
 -----------------
 
-This script converts mesh tiles produced by L3DT into a single mesh that can be imported into OpenSim.
+This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
 It's a shell script that uses Blender to do the hard work and it assumes the following prerequisites:
 
 You have a directory structure something like this:
@@ -43,6 +43,10 @@ Blender in a headless configuration to combine the mesh tiles into one.
 
 Once you have the combined mesh tile you can import it into OpenSim. The best tool for this is the Radegast viewer.
 http://radegast.org/wiki/Radegast_Download
+Radegast uses only one LOD for the mesh including physics. This is just what you want for terrain and is much quicker than other viewers
+which try to calculate different LOD levels. I did not have any success with texture uploads however with Radegast, so I used
+an ordinary viewer for this. It does mean that you will have to drag and drop 256 textures onto your terrain using the viewer to complete
+your terrain in Opensim. If anyone has a better way for this I'd love to know about it!
 
 Any questions or suggestions for improvement, please contact me directly: jak {at} ateb {dot} co {dot} uk
 
