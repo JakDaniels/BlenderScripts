@@ -9,7 +9,7 @@ L3DT_2_Opensim.sh
 -----------------
 
 This script converts mesh tiles produced by L3DT into a single mesh that can be imported into OpenSim.
-It's a blender script and it assumes the following prerequisites:
+It's a shell script that uses Blender to do the hard work and it assumes the following prerequisites:
 
 You have a directory structure something like this
 
