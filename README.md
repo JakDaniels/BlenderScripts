@@ -20,11 +20,15 @@ You have a directory structure something like this
 	|-BlenderScripts
 	|-l3dt
 	|  |-Project1
+	|  |  |-AM
+	|  |  |-dae
+	|  |  |- ....etc
 	|  |-Project2
 	|  |-Project3
 	
+	...etc
 
-etc.
+
 
 The 'blender' directory is a symlink to the statically compiled version of Blender 2.73. 
 I used blender-2.73a-linux-glibc211-x86_64 which I downloaded from https://download.blender.org/release/Blender2.73/
