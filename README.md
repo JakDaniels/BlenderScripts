@@ -13,16 +13,16 @@ It's a shell script that uses Blender to do the hard work and it assumes the fol
 
 You have a directory structure something like this
 
-
-~
-|-blender -> blender-2.73a-linux-glibc211-x86_64
-|-blender-2.73a-linux-glibc211-x86_64
-|-BlenderScripts
-|-l3dt
-|  |-Project1
-|  |-Project2
-|  |-Project3
-
+	
+	~
+	|-blender -> blender-2.73a-linux-glibc211-x86_64
+	|-blender-2.73a-linux-glibc211-x86_64
+	|-BlenderScripts
+	|-l3dt
+	|  |-Project1
+	|  |-Project2
+	|  |-Project3
+	
 
 etc.
 
