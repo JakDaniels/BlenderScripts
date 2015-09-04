@@ -4,14 +4,7 @@ BlenderScripts
 This will become a collection of scripts I use to create mesh terrain for OpenSim.
 There are scripts for Linux and Windows.
 
-
-L3DT_2_Opensim
---------------
-
-This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
-It's a shell script/batch file that uses Blender to do the hard work and it assumes the following prerequisites:
-
-#For Linux:
+#Setup For Linux:
 
 Checkout the repository using:
 	git clone https://github.com/JakDaniels/BlenderScripts.git
@@ -40,7 +33,7 @@ I used blender-2.73a-linux-glibc211-x86_64 which I downloaded from https://downl
 
 The file you should run is L3DT_2_Opensim.sh
 
-#For Windows:
+#Setup For Windows:
 
 Download the ZIP file of the repository from https://github.com/JakDaniels/BlenderScripts/archive/master.zip
 Unzip to your working area and make sure you have a directory structure something like this:
@@ -62,9 +55,15 @@ You must have blender installed on Windows (tested with 2.73) and you *MUST ADD 
 Test that you can run blender by going to a command prompt and type 'blender.exe'. If it doesn't run then the path is not
 set correctly!
 
-The file you should run is L3DT_2_Opensim.bat by opening a command prompt and changing to the BlenderScripts-master directory.
+To run the BlenderScripts you must run a command prompt and change to the BlenderScripts-master directory.
 
-#Using the script:
+L3DT_2_Opensim
+--------------
+
+This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
+It's a shell script/batch file that uses Blender to do the hard work and it assumes the following prerequisites:
+
+#Using the L3DT_2_Opensim script:
 
 The 'l3dt' directory has sub directories for each project you create. Within those project directories are various directories that L3DT uses, but you
 should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you should export as type collada and set the required number of tiles.
