@@ -93,7 +93,7 @@ I can't seem to get textures to work in Windows. Blender refuses to import the t
 Todo
 ----
 
-Automate the uploading of the mesh into OpenSim using Radegast or a custom OMV client.
+Automate the uploading of the mesh into OpenSim using Radegast or a custom libOMV client.
 
 
 
