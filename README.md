@@ -2,11 +2,11 @@ BlenderScripts
 ==============
 
 This will become a collection of scripts I use to create mesh terrain for OpenSim.
-The scripts run on Linux, however it shouldn't be too difficult to do something similar on Windows.
+There are scripts for Linux and Windows.
 
 
-L3DT_2_Opensim.sh
------------------
+L3DT_2_Opensim
+--------------
 
 This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
 It's a shell script/batch file that uses Blender to do the hard work and it assumes the following prerequisites:
