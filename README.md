@@ -72,6 +72,11 @@ should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you
 The script should be run from the BlenderScripts (or BlenderScripts-master) directory. It fixes some XML errors in the DAE files that L3DT produces and then invokes
 Blender in a headless configuration to combine the mesh tiles into one.
 
+	Usage: L3DT_2_Opensim.sh [-h] <L3DT_Project_Name> <XAxis> <YAxis>
+	Converts mesh tiles into one mesh that can be imported into OpenSim. 
+	<L3DT_Project_Name> is the name of the L3DT project. The script will look for a subfolder called 'dae'
+	and process the files it finds there. <XAxis> and <YAxis> are the number of tiles the mesh and textures were divided up into.
+
 Once you have the combined mesh tile you can import it into OpenSim. The best tool for this is the Radegast viewer.
 http://radegast.org/wiki/Radegast_Download
 Radegast uses only one LOD for the mesh including physics. This is just what you want for terrain and is much quicker than other viewers
