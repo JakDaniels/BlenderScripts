@@ -61,9 +61,9 @@ L3DT_2_Opensim
 --------------
 
 This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
-It's a shell script/batch file that uses Blender to do the hard work and it assumes the following prerequisites:
+It's a shell script/batch file that uses Blender to do the hard work and it assumes that the correct directory structures are in place above.
 
-#Using the L3DT_2_Opensim script:
+###Using the L3DT_2_Opensim script:
 
 The 'l3dt' directory has sub directories for each project you create. Within those project directories are various directories that L3DT uses, but you
 should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you should export as type collada and set the required number of tiles.
