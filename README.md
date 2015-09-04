@@ -9,9 +9,11 @@ L3DT_2_Opensim.sh
 -----------------
 
 This script converts mesh tiles produced by L3DT into a single mesh terrain that can be imported into OpenSim.
-It's a shell script that uses Blender to do the hard work and it assumes the following prerequisites:
+It's a shell script/batch file that uses Blender to do the hard work and it assumes the following prerequisites:
 
-You have a directory structure something like this:
+#For Linux:
+
+You have a directory structure something like this on Linux:
 
 	
 	~
@@ -33,6 +35,31 @@ You have a directory structure something like this:
 The 'blender' directory is a symlink to the statically compiled version of Blender 2.73. 
 I used blender-2.73a-linux-glibc211-x86_64 which I downloaded from https://download.blender.org/release/Blender2.73/
 
+The file you should run is L3DT_2_Opensim.sh
+
+#For Windows:
+
+
+	~
+	|-BlenderScripts
+	|-l3dt
+	|  |-Project1
+	|  |  |-AM
+	|  |  |-dae
+	|  |  |- ....etc
+	|  |-Project2
+	|  |-Project3
+	
+	...etc
+
+You must have blender installed on Windows (tested with 2.73) and you *MUST ADD THE BLENDER DIRECTORY TO YOUR SYSTEM PATH*.
+Test that you can run blender by going to a command prompt and type 'blender.exe'. If it doesn't run then the path is not
+set correctly!
+
+The file you should run is L3DT_2_Opensim.bat
+
+#For Linux and Windows:
+
 BlenderScripts is the directory this project is checked out into.
 
 The l3dt directory has sub directories for each project you create. Within them are various directories that L3DT uses, but you
@@ -47,6 +74,11 @@ Radegast uses only one LOD for the mesh including physics. This is just what you
 which try to calculate different LOD levels. I did not have any success with texture uploads however with Radegast, so I used
 an ordinary viewer for this. It does mean that you will have to drag and drop 256 textures onto your terrain using the viewer to complete
 your terrain in Opensim. If anyone has a better way for this I'd love to know about it!
+
+Bugs
+----
+
+I can't seem to get textures to work in Windows. Blender refuses to import the textures and the resulting export contains no texture info.
 
 Any questions or suggestions for improvement, please contact me directly: jak {at} ateb {dot} co {dot} uk
 
