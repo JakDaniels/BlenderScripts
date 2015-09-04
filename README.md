@@ -74,8 +74,9 @@ Blender in a headless configuration to combine the mesh tiles into one.
 
 	Usage: L3DT_2_Opensim.sh [-h] <L3DT_Project_Name> <XAxis> <YAxis>
 	Converts mesh tiles into one mesh that can be imported into OpenSim. 
-	<L3DT_Project_Name> is the name of the L3DT project. The script will look for a subfolder called 'dae'
-	and process the files it finds there. <XAxis> and <YAxis> are the number of tiles the mesh and textures were divided up into.
+	<L3DT_Project_Name> is the name of the L3DT project. The script will look for a subfolder
+	called 'dae' and process the files it finds there. <XAxis> and <YAxis> are the number of
+	tiles the mesh and textures were divided up into.
 
 Once you have the combined mesh tile you can import it into OpenSim. The best tool for this is the Radegast viewer.
 http://radegast.org/wiki/Radegast_Download
