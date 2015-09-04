@@ -13,7 +13,10 @@ It's a shell script/batch file that uses Blender to do the hard work and it assu
 
 #For Linux:
 
-You have a directory structure something like this on Linux:
+Checkout the repository using:
+	git clone https://github.com/JakDaniels/BlenderScripts.git
+
+Make sure you have a directory structure something like this:
 
 	
 	~
@@ -39,9 +42,12 @@ The file you should run is L3DT_2_Opensim.sh
 
 #For Windows:
 
+Download the ZIP file of the repository from https://github.com/JakDaniels/BlenderScripts/archive/master.zip
+Unzip to your working area and make sure you have a directory structure something like this:
+
 
 	~
-	|-BlenderScripts
+	|-BlenderScripts-master
 	|-l3dt
 	|  |-Project1
 	|  |  |-AM
@@ -56,16 +62,14 @@ You must have blender installed on Windows (tested with 2.73) and you *MUST ADD 
 Test that you can run blender by going to a command prompt and type 'blender.exe'. If it doesn't run then the path is not
 set correctly!
 
-The file you should run is L3DT_2_Opensim.bat
+The file you should run is L3DT_2_Opensim.bat by opening a command prompt and changing to the BlenderScripts-master directory.
 
-#For Linux and Windows:
+#Using the script:
 
-BlenderScripts is the directory this project is checked out into.
+The 'l3dt' directory has sub directories for each project you create. Within those project directories are various directories that L3DT uses, but you
+should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you should export as type collada and set the required number of tiles.
 
-The l3dt directory has sub directories for each project you create. Within them are various directories that L3DT uses, but you
-should place your exported L3DT tiles in a sub dir called 'dae'. Within L3DT you should export as type collada.
-
-The script should be run from the BlenderScripts directory. It fixes some XML errors in the DAE files that L3DT produces and then invokes
+The script should be run from the BlenderScripts (or BlenderScripts-master) directory. It fixes some XML errors in the DAE files that L3DT produces and then invokes
 Blender in a headless configuration to combine the mesh tiles into one.
 
 Once you have the combined mesh tile you can import it into OpenSim. The best tool for this is the Radegast viewer.
