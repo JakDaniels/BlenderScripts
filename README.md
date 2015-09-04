@@ -82,7 +82,7 @@ Once you have the combined mesh tile you can import it into OpenSim. The best to
 http://radegast.org/wiki/Radegast_Download
 Radegast uses only one LOD for the mesh including physics. This is just what you want for terrain and is much quicker than other viewers
 which try to calculate different LOD levels. I did not have any success with texture uploads however with Radegast, so I used
-an ordinary viewer for this. It does mean that you will have to drag and drop 256 textures onto your terrain using the viewer to complete
+an ordinary viewer for this. It does mean that you will have to drag and drop all the textures onto your terrain using the viewer to complete
 your terrain in Opensim. If anyone has a better way for this I'd love to know about it!
 
 Bugs
