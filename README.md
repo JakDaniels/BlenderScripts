@@ -31,7 +31,7 @@ Make sure you have a directory structure something like this:
 The 'blender' directory is a symlink to the statically compiled version of Blender 2.73. 
 I used blender-2.73a-linux-glibc211-x86_64 which I downloaded from https://download.blender.org/release/Blender2.73/
 
-The file you should run is L3DT_2_Opensim.sh from within the BlenderScripts directory.
+The scripts should be run from within the BlenderScripts directory.
 
 #Setup For Windows:
 
@@ -88,6 +88,14 @@ Bugs
 ----
 
 I can't seem to get textures to work in Windows. Blender refuses to import the textures and the resulting export contains no texture info.
+
+
+Todo
+----
+
+Automate the uploading of the mesh into OpenSim using Radegast or a custom OMV client.
+
+
 
 Any questions or suggestions for improvement, please contact me directly: jak {at} ateb {dot} co {dot} uk
 
