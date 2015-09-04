@@ -31,7 +31,7 @@ Make sure you have a directory structure something like this:
 The 'blender' directory is a symlink to the statically compiled version of Blender 2.73. 
 I used blender-2.73a-linux-glibc211-x86_64 which I downloaded from https://download.blender.org/release/Blender2.73/
 
-The file you should run is L3DT_2_Opensim.sh
+The file you should run is L3DT_2_Opensim.sh from within the BlenderScripts directory.
 
 #Setup For Windows:
 
